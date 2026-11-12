@@ -1,6 +1,6 @@
-const CACHE = 'syg-kitchen-cdc110db81', SHELL = ["/kitchen/assets/site.css?v=1f799d5064", "/kitchen/assets/site.js?v=be6129bb4a", "/kitchen/icons/logo-light.webp", "/kitchen/icons/logo-dark.webp"];
+const CACHE = 'syg-m-kitchen-cdc110db81', SHELL = ["/kitchen/assets/site.css?v=1f799d5064", "/kitchen/assets/site.js?v=be6129bb4a", "/kitchen/icons/logo-light.webp", "/kitchen/icons/logo-dark.webp"];
 self.addEventListener('install', e => { self.skipWaiting(); e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).catch(() => {})); });
-self.addEventListener('activate', e => e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k.indexOf('syg-') === 0 && k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())));
+self.addEventListener('activate', e => e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k.indexOf('syg-m-kitchen-') === 0 && k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())));
 self.addEventListener('fetch', e => {
   const r = e.request, u = new URL(r.url);
   if (r.method !== 'GET' || u.origin !== location.origin) return;
