@@ -1,0 +1,18 @@
+/* bijli: calculators and guides */
+.lead{font-size:1.08rem;color:var(--soft)}
+.btn.sm,.chips a,.chips button{min-height:40px}
+.next{margin-top:26px}
+input[type=date]{width:100%;min-height:46px;padding:10px 12px;font:inherit;font-size:1rem;color:var(--ink);background:var(--field);border:1px solid var(--field-line);border-radius:10px}
+.chk{display:flex;gap:10px;align-items:center;min-height:44px;font-weight:400;cursor:pointer}
+.lbl{font-weight:600;font-size:.92rem;margin:14px 0 4px}
+.srow{display:grid;grid-template-columns:1fr 1fr 44px;gap:8px;align-items:end;margin:6px 0}
+.srow label{font-weight:400;font-size:.84rem;color:var(--soft);margin:0}
+.srow input{margin-top:2px}
+.srow .x{width:44px;height:46px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--soft);font-size:1.3rem;cursor:pointer}
+#bl-slabs.lock input{background:var(--surface2);pointer-events:none}
+#bl-slabs.lock .x{visibility:hidden}
+#bl-slabs.lock+p{display:none}
+td.num,th.num{text-align:right;white-space:nowrap}
+.wrap0{margin:14px 0}
+code{font-family:var(--mono);font-size:.92em;background:var(--surface2);border-radius:5px;padding:1px 5px}
+@media print{.next,.btn,.finder{display:none!important}}

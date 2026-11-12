@@ -1,0 +1,13 @@
+/* Kitchen: the few styles the shared frame does not have */
+input[type=number]{width:100%;min-height:46px;padding:10px 12px;font:inherit;font-size:1rem;color:var(--ink);background:var(--field);border:1px solid var(--field-line);border-radius:10px}
+.out{font:600 1.12rem/1.4 var(--font);margin:14px 0 0;padding:12px 14px;background:var(--surface2);border-radius:10px;border-left:4px solid var(--teal)}
+.finder h2{margin:0 0 10px;font-size:1.1rem}
+.finder + .finder{margin-top:0}
+.grid a span{display:block}.grid a span small{display:block;white-space:normal;margin-top:2px}
+td[lang=hi]{font-size:1.05rem;white-space:nowrap}
+td .ro{color:var(--soft);font-style:italic}
+.result dd small{color:var(--soft);font-weight:400}
+table th{position:static}
+@media (max-width:640px){td[lang=hi]{white-space:normal}}
+@media print{.chips{display:none!important}.tbl{border:0}}
+@media (max-width:640px){table.stack td:empty{display:none}}

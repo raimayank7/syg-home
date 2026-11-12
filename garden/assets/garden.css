@@ -1,0 +1,15 @@
+/* Garden: month strips and small extras */
+.cal{display:grid;grid-template-columns:repeat(12,1fr);gap:2px;margin:4px 0}
+.cal i{display:block;height:22px;border-radius:4px;background:var(--surface2);font:600 .62rem/22px var(--font);font-style:normal;text-align:center;color:var(--soft)}
+.cal i.on{background:var(--accent);color:var(--accent-ink)}
+.calrow{display:grid;grid-template-columns:1fr;gap:2px;margin:12px 0}
+.calrow b{font-size:.92rem}
+.grid a span{display:block}.grid a span small{display:block;white-space:normal;margin-top:2px}
+.grid a span[lang=hi]{display:inline;font-weight:400;color:var(--soft);margin-left:6px}
+.mnav{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin:18px 0}
+.months{display:grid;gap:8px;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));list-style:none;padding:0;margin:14px 0}
+.months a{display:block;text-align:center;min-height:44px;padding:10px;background:var(--surface);border:1px solid var(--line);border-radius:10px;text-decoration:none;color:var(--ink);font-weight:600}
+.months a:hover,.months a[aria-current]{border-color:var(--accent);background:var(--surface2)}
+table th{position:static}
+td[lang=hi]{white-space:nowrap}
+@media print{.chips,.mnav{display:none!important}}
