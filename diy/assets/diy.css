@@ -1,0 +1,13 @@
+/* diy: calculators and guides */
+.lead{font-size:1.08rem;color:var(--soft)}
+.next{margin-top:26px}
+.chk{display:flex;gap:10px;align-items:center;min-height:44px;font-weight:400;cursor:pointer}
+td.num,th.num{text-align:right;white-space:nowrap}
+.finder input[type=text],.finder select{width:100%}
+.finder .sub{margin:14px 0 4px;font-weight:600;font-size:.92rem}
+.result .tbl{margin:10px 0}
+.result p{margin:.5em 0}
+code{font-family:var(--mono);font-size:.92em;background:var(--surface2);border-radius:5px;padding:1px 5px}
+@media print{.next,.btn,.finder{display:none!important}}
+.grid a{flex-wrap:wrap}.grid a small{white-space:normal;flex-basis:100%}.grid a span{display:block}
+.ns-want{opacity:1!important}

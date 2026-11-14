@@ -1,0 +1,8 @@
+.lead{font-size:1.08rem;color:var(--soft)}
+.finder input[type=text],.finder select{width:100%}
+td.num,th.num{text-align:right;white-space:nowrap}
+.result p{margin:.5em 0}.result .tbl{margin:10px 0}
+.grid a{flex-wrap:wrap}.grid a small{white-space:normal;flex-basis:100%}.grid a span{display:block}
+.zbadge{display:inline-block;font:700 2.4rem/1 var(--head,inherit);padding:.2em .5em;border-radius:12px;background:var(--surface2);border:2px solid var(--teal)}
+@media print{.btn,.finder{display:none!important}}
+.ns-want{opacity:1!important}
