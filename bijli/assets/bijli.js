@@ -68,7 +68,7 @@
         '<dl class="facts"><dt>Energy charge</dt><dd>' + R(r.energy.total) + '</dd><dt>Fixed charge</dt><dd>' + R(r.fixed) + (P && P.loadShare !== 1 ? ' (on ' + Math.round(P.loadShare * 100) + '% of ' + num($('#bl-load').value) + ' kW, for ' + months + (months > 1 ? ' months' : ' month') + ')' : '') + '</dd>' +
         (r.extra ? '<dt>Duty and other charges you entered</dt><dd>' + R(r.extra) + '</dd>' : '') + (num($('#bl-rebate').value) ? '<dt>Subsidy or rebate you entered</dt><dd>- ' + R(num($('#bl-rebate').value)) + '</dd>' : '') +
         '<dt>Average cost per unit</dt><dd>' + R(r.perUnit) + '</dd></dl><p class="hint">' + (P ? S.esc(P.caveat) : 'An estimate from the rates you typed. Your bill may also carry fuel adjustment, duty, meter rent, arrears or a subsidy; add them in the boxes above to match it.') + '</p>' +
-        '<div class="acts"><button class="btn sm" type="button" data-copy="' + S.esc(t) + '">Copy</button><button class="btn sm ghost" type="button" data-wa="' + S.esc(t + ' http://home.shareyourgroup.com/bijli/') + '">Send on WhatsApp</button></div>');
+        '<div class="acts"><button class="btn sm" type="button" data-copy="' + S.esc(t) + '">Copy</button><button class="btn sm ghost" type="button" data-wa="' + S.esc(t + ' https://home.shareyourgroup.com/bijli/') + '">Send on WhatsApp</button></div>');
     }
     $('#bl-add').addEventListener('click', function () { var w = d.createElement('div'); w.innerHTML = rowHtml(null, null); box.appendChild(w.firstChild); });
     box.addEventListener('click', function (e) { var b = e.target.closest('[data-del]'); if (b && box.querySelectorAll('.srow').length > 1) { b.closest('.srow').remove(); run(); } });

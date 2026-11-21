@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://home.shareyourgroup.com/sitemap.xml
+Sitemap: https://home.shareyourgroup.com/sitemap.xml
